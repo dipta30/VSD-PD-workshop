@@ -40,3 +40,5 @@ In linux terminal, copied an existing rtl from vsdflow github folder in a local 
 •	Library is for keeping Standard cells (FF, buffers), with diff. functionality and sizes, diff. VT.
 
 •	Timing threshold: for a rising waveform we have slew_low_rise_threshold (typ. 20 %) and slew_high_rise_threshold (80 %) etc.  For input rising wave we have in_rise_thr (50 %) , rise delay = taking the 50% point of out and in, difference of that.
+
+![Image of Yaktocat](https://github.com/dipta30/VSD-PD-workshop/blob/main/images1/8.png)
