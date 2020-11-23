@@ -259,7 +259,11 @@ Add input excitation parameters and library model files to this and run a transi
 # Day 4: Timing analysis and clock tree synthesis
 
 ## Timing analysis: 
-Setup and hold analysis with ideal clock vs. with real clock
+• Setup and hold analysis with ideal clock 
+• CTS
+• Setup and hold analysis with real clock
+
+
 
 ## CTS: 
 
