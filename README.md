@@ -355,6 +355,8 @@ This gives the reports upto 4 digits of precision. Observe the data arrival time
 
 •	DRC: design rule check 
 
+• Each wire has parasitic resistance and capacitancce, which need to be extracted and fed to the tool.
+
 •	SPEF : standard parasitic exchange format
 
 # Lab session:
