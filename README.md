@@ -1,8 +1,8 @@
 # VSD-PD-workshop
 
 # Contents
-<a href="#day-1-review-of-riscv-based-picosoc">1. Rev of RISCV based picoSOC</a>
-<a href="#day-1-review-of-riscv-based-picosoc">1. Rev of RISCV based picoSOC</a>
+<a href="#day-1-review-of-riscv-based-picosoc">Review of RISCV based picoSOC</a>
+<a href="#day-2-introduction-to-floorplanning-and-libraries"> Introduction to floorplanning and libraries</a>
 
 # Day 1: Review of RISCV based picoSOC
 •	Understanding the computer system (where instruction set architecture comes in play) 
