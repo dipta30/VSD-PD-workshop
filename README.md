@@ -11,7 +11,7 @@
 
 
 
-# Day 1: Understanding of RISCV based picoSOC
+# Day 1: Understanding RISCV ISA, Qflow and QFN package 
 •	Understanding the computer system (where instruction set architecture comes in play) 
 
 •	The instruction-set architecture (ISA) depends on the type of CPU core. RISCV CPU core will need RISCV based IS format.
@@ -106,5 +106,29 @@ Setup and hold analysis with ideal clock vs. with real clock
 •	To charcterize a buffer, there are delay tables and transition tables
 
 •	Delay table is output load cap vs input transition time.
+
+# Day 5: Routing, DRC and the concept of SPEF
+
+•	Understanding Maze routing and Lee’s algorithm to find the shortest and best routing path
+
+•	DRC: design rule check 
+
+•	SPEF
+
+# Labs:
+For routing and post-route STA, type
+
+cd vsdflow/my_picorv32
+
+qflow route picorv32
+
+qflow sta picorv32
+
+qflow backanno picorv32
+
+leafpad log/sta.log
+
+Routing going on is shown below
+
 
 
