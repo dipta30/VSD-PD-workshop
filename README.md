@@ -27,21 +27,29 @@ In linux terminal, copied an existing rtl from vsdflow github folder in a local 
 
 # Day 2: 
 
-•	Pre-placed cells: complex combinational logic IP’s ( memory, complec clock gateing cell, mux , comparator etc) are implemented once and instantiated multiple times in the netlist. User-defined location. placed before automated PnR
+## Floorplanning
 
-•	Floorplanning: the arrangement of these IP’s in the chip 
+•	Importance of utilization factor and aspect ratio
 
-•	Surround pre-placed cells with decoupling caps to prevent voltage going out of noise margin 
+•	Pre-placed cells: complex combinational logic IP’s (memory, complex clock gating cell, mux, comparator etc) are implemented once and instantiated multiple times in the netlist. User-defined location. placed before automated PnR.
 
-•	Ground bounce and voltage drop – power planning (vdd and gnd grids)
-•	Bind netlist to physical cells
+•	Floorplanning: the arrangement of these pre-placed cells in the chip
 
-•	Initial placement based on input output connections
+•	Decoupling caps: surround pre-placed cells with decaps to prevent voltage going out of noise margin region
 
-•	Optimised placement by calculating estimated wire delay and capacitance and inserting repeaters
+•	Power planning (VDD and GND grids): done to avoid ground bounce and voltage droop
 
-•	Library is for keeping Standard cells (FF, buffers), with diff. functionality and sizes, diff. VT.
+# Placement
+•	Library is for keeping Standard cells (FF, buffers), with different functionality, sizes, different threshold voltage
 
-•	Timing threshold: for a rising waveform we have slew_low_rise_threshold (typ. 20 %) and slew_high_rise_threshold (80 %) etc.  For input rising wave we have in_rise_thr (50 %) , rise delay = taking the 50% point of out and in, difference of that.
+•	Binding netlist to physical cells from library
+
+•	Initial placement based on input-output connections
+
+•	Optimised placement by calculating estimated wire delay and capacitance and inserting repeaters (buffers)
+
+•	Timing threshold: for a rising waveform we have definitions of slew_low_rise_threshold (typ. 20 %) and slew_high_rise_threshold (80 %) etc.  For input rising wave we have in_rise_thr (50 %)
+
+•	Rise delay = Difference between time-axis coordinates of the 50% point of output and input waveforms
 
 ![Image of Yaktocat](https://github.com/dipta30/VSD-PD-workshop/blob/main/images1/8.png)
