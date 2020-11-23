@@ -42,6 +42,7 @@ git clone https://github.com/kunalg123/vsdflow.git
 
 type
 
+<div class="text-blue mb-2">
 cd
 
 cd vsdflow
@@ -55,6 +56,8 @@ mkdir source synthesis layout
 cp ~/vsdflow/verilog/picorv32.v source/.
 
 qflow gui &
+
+</div>
 
 ![4](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/4.png)
 
