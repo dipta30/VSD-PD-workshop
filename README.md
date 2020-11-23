@@ -5,7 +5,7 @@
 
 <a href="#day-2-introduction-to-floorplanning-and-placement"> Introduction to floorplanning and placement</a>
 
-<a href="#day-3-concepts-of-spice-simulations-layout-and-fabrication-steps"> Concepts of spice simulations, layout and fabrication steps</a>
+<a href="#day3-concepts-of-spice-simulations-layout-and-fabrication-steps"> Concepts of spice simulations, layout and fabrication steps</a>
 
 <a href="#day-4-Timing-analysis-and-clock-tree-synthesis"> Timing analysis and clock tree synthesis</a>
 
