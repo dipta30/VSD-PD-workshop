@@ -1,15 +1,17 @@
 # VSD-PD-workshop
 
 # Contents
-<a href="#day-1-review-of-riscv-based-picosoc">Review of RISCV based picoSOC</a>
+<a href="#day-1-understanding-of-riscv-based-picosoc"> 1. Understanding of RISCV based picoSOC</a>
 
-<a href="#day-2-introduction-to-floorplanning-and-placement"> Introduction to floorplanning and placement</a>
+<a href="#day-2-introduction-to-floorplanning-and-placement"> 2. Introduction to floorplanning and placement</a>
 
-<a href="#day3-concepts-of-spice-simulations-layout-and-fabrication-steps"> Concepts of spice simulations, layout and fabrication steps</a>
+<a href="#day3-concepts-of-spice-simulations-layout-and-fabrication-steps"> 3. Concepts of spice simulations, layout and fabrication steps</a>
 
-<a href="#day-4-Timing-analysis-and-clock-tree-synthesis"> Timing analysis and clock tree synthesis</a>
+<a href="#day-4-Timing-analysis-and-clock-tree-synthesis"> 4. Timing analysis and clock tree synthesis</a>
 
-# Day 1: Review of RISCV based picoSOC
+
+
+# Day 1: Understanding of RISCV based picoSOC
 •	Understanding the computer system (where instruction set architecture comes in play) 
 
 •	The instruction-set architecture (ISA) depends on the type of CPU core. RISCV CPU core will need RISCV based IS format.
@@ -62,7 +64,7 @@ In linux terminal, copied an existing rtl from vsdflow github folder in a local 
 
 ![Image of Yaktocat](https://github.com/dipta30/VSD-PD-workshop/blob/main/images1/8.png)
 
-# Day3: Concepts of spice simulations, layout and fabrication steps
+# Day 3: Concepts of spice simulations, layout and fabrication steps
 
 •	Writing spice deck for inverter in ngspice, static (dc) simulation
 
