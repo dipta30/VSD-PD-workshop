@@ -2,6 +2,7 @@
 
 # Contents
 <a href="#day-1-review-of-riscv-based-picosoc">Review of RISCV based picoSOC</a>
+
 <a href="#day-2-introduction-to-floorplanning-and-libraries"> Introduction to floorplanning and libraries</a>
 
 # Day 1: Review of RISCV based picoSOC
@@ -52,5 +53,7 @@ In linux terminal, copied an existing rtl from vsdflow github folder in a local 
 •	Timing threshold: for a rising waveform we have definitions of slew_low_rise_threshold (typ. 20 %) and slew_high_rise_threshold (80 %) etc.  For input rising wave we have in_rise_thr (50 %)
 
 •	Rise delay = Difference between time-axis coordinates of the 50% point of output and input waveforms
+
+# Lab: 
 
 ![Image of Yaktocat](https://github.com/dipta30/VSD-PD-workshop/blob/main/images1/8.png)
