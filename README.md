@@ -1,9 +1,5 @@
 # VSD-PD-workshop
 
-<div class="bg-blue-light mb-2">
-  .text-gray-dark on .bg-blue-light
-</div>
-
 # Contents
 <a href="#day-1-understanding-of-riscv-based-picosoc"> 1. Understanding RISCV ISA, Qflow and QFN package </a>
 
