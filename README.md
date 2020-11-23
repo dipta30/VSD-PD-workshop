@@ -1,7 +1,7 @@
 # VSD-PD-workshop
 
 # Contents
-<a href="#day-1-understanding-of-riscv-based-picosoc"> 1. Understanding of RISCV based picoSOC</a>
+<a href="#day-1-understanding-of-riscv-based-picosoc"> 1. Understanding RISCV ISA, Qflow and QFN package </a>
 
 <a href="#day-2-introduction-to-floorplanning-and-placement"> 2. Introduction to floorplanning and placement</a>
 
@@ -9,12 +9,14 @@
 
 <a href="#day-4-Timing-analysis-and-clock-tree-synthesis"> 4. Timing analysis and clock tree synthesis</a>
 
-
+<a href="#day-5-Routig-DRC-and-the-concept-of-SPEF"> 5. Routing, DRC and the concept of SPEF</a>
 
 # Day 1: Understanding RISCV ISA, Qflow and QFN package 
 •	Understanding the computer system (where instruction set architecture comes in play) 
 
 •	The instruction-set architecture (ISA) depends on the type of CPU core. RISCV CPU core will need RISCV based IS format.
+
+![1](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/1.png)
 
 •	RISCV is open source assembly language program.
 
@@ -26,10 +28,11 @@
 
 •	Using vsdflow as a wrapper around qflow to get all open-source tools installed.
 
-•	The CPU core will be inside a SOC consisting of some other blocks like memory etc. The chip will consist of the SOC and some additional blocks.
+•	The CPU core will be inside a SOC consisting of some other blocks like memory etc. The chip will consist of the SOC and some additional blocks
 
 •	Introduction to QFN- 48 package, pad frame (core and die), inside chip : Foundry IP’s (ADC, PLL, SRAM etc. ) and macros (pure digital logic)
 
+![2](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/2.png)
 # Lab: 
 In linux terminal, copied an existing rtl from vsdflow github folder in a local directory called my_picorv32, and prepared to run synthesis using osu018 technology. 
 
