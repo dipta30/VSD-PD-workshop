@@ -222,10 +222,6 @@ the rise delay can be calculated by clicking on the points where the two input a
 
 ![17](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/17.png)
 
-![18](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/18.png)
-
-![19](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/19.png)
-
 To open the inv layout in magic, type
 
 magic -T filename.tech
