@@ -3,7 +3,11 @@
 # Contents
 <a href="#day-1-review-of-riscv-based-picosoc">Review of RISCV based picoSOC</a>
 
-<a href="#day-2-introduction-to-floorplanning-and-libraries"> Introduction to floorplanning and libraries</a>
+<a href="#day-2-introduction-to-floorplanning-and-placement"> Introduction to floorplanning and placement</a>
+
+<a href="#day-3-concepts-of-spice-simulations-layout-and-fabrication-steps"> Concepts of spice simulations, layout and fabrication steps</a>
+
+<a href="#day-4-Timing-analysis-and-clock-tree-synthesis"> Timing analysis and clock tree synthesis</a>
 
 # Day 1: Review of RISCV based picoSOC
 •	Understanding the computer system (where instruction set architecture comes in play) 
@@ -57,3 +61,48 @@ In linux terminal, copied an existing rtl from vsdflow github folder in a local 
 # Lab: 
 
 ![Image of Yaktocat](https://github.com/dipta30/VSD-PD-workshop/blob/main/images1/8.png)
+
+# Day3: Concepts of spice simulations, layout and fabrication steps
+
+•	Writing spice deck for inverter in ngspice, static (dc) simulation
+
+•	Significance of switching threshold (point where Vin = Vout) in robustness of the inverter
+
+•	Dynamic simulation (inverter is excited with a pulse input)
+
+•	Importance of Euler path and stick diagram together in making neat layouts with lesser connectivity
+
+•	Layout of inverter in magic
+
+•	post-layout simulation in ngspice
+
+•	Comparison of pre- and post-layout plots
+
+•	16-mask CMOS fab process: detailed description
+
+# Day 4: Timing analysis and clock tree synthesis
+
+## Timing analysis: 
+Setup and hold analysis with ideal clock vs. with real clock
+
+## CTS: 
+
+•	Clock is routed using H-tree algo for having zero skew
+
+•	Path is long, contain RC parasitics, clock waveform degrades.  Therefore buffers are introduced to strengthen the signal
+
+•	Clock nets are shielded from crosstalk (problems like glitch) using vdd and gnd routes surrounding the clock nets because these do not switch
+
+•	Glitch – aggressor going from logic 1 to 0, victim was in logic 1 , may go to logic 0 for some time before coming back to logic 1 again (a dip in voltage, ma cause reset in some logics)
+
+•	Delta delay- even after building a Clock tree with zero skew, crosstalk can lead to a delta delay, i.e. a skew. (due to a aggressor going from 0 to 1, victim trying to go from 1 to 0 may tend to go to 1 then comes to 0 after a delay)
+
+•	To have zero skew, Buffers at each stage should be identical and should be driving identical load caps
+
+•	To calculate latency from and to different clock ports, buffer delays need to be calculated 
+
+•	To charcterize a buffer, there are delay tables and transition tables
+
+•	Delay table is output load cap vs input transition time.
+
+
