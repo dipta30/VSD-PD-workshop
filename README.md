@@ -2,6 +2,7 @@
 
 # Contents
 <a href="#day-1-review-of-riscv-based-picosoc">1. Rev of RISCV based picoSOC</a>
+<a href="#day-1-review-of-riscv-based-picosoc">1. Rev of RISCV based picoSOC</a>
 
 # Day 1: Review of RISCV based picoSOC
 •	Understanding the computer system (where instruction set architecture comes in play) 
@@ -25,7 +26,7 @@
 # Lab: 
 In linux terminal, copied an existing rtl from vsdflow github folder in a local directory called my_picorv32, and prepared to run synthesis using osu018 technology. 
 
-# Day 2: 
+# Day 2: Introduction to floorplanning and libraries
 
 ## Floorplanning
 
@@ -39,7 +40,7 @@ In linux terminal, copied an existing rtl from vsdflow github folder in a local 
 
 •	Power planning (VDD and GND grids): done to avoid ground bounce and voltage droop
 
-# Placement
+## Placement
 •	Library is for keeping Standard cells (FF, buffers), with different functionality, sizes, different threshold voltage
 
 •	Binding netlist to physical cells from library
