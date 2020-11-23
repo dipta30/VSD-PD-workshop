@@ -43,7 +43,7 @@ git clone https://github.com/kunalg123/vsdflow.git
 type
 
 
-cd
+'cd
 
 cd vsdflow
 
@@ -55,7 +55,7 @@ mkdir source synthesis layout
 
 cp ~/vsdflow/verilog/picorv32.v source/.
 
-qflow gui &
+qflow gui &'
 
 
 
