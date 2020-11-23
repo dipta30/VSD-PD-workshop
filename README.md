@@ -33,7 +33,7 @@
 •	Introduction to QFN- 48 package, pad frame (core and die), inside chip : Foundry IP’s (ADC, PLL, SRAM etc. ) and macros (pure digital logic)
 
 ![2](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/2.png)
-# Lab: 
+# Lab session: 
 In linux terminal, copied an existing rtl from vsdflow github folder in a local directory called my_picorv32, and prepared to run synthesis using osu018 technology.
 ```
 git clone https://github.com/kunalg123/vsdflow.git
@@ -101,7 +101,7 @@ Then run preparation
 
 •	Rise delay = Difference between time-axis coordinates of the 50% point of output and input waveforms
 
-# Lab: 
+# Lab session: 
 
 For synthesis and placement, continue the steps from day 1. When the qflow gui opens, and the pre-synthesis preparations are done, in the synthesis option, click run.
 
@@ -171,7 +171,7 @@ The area will be displayed
 
 •	16-mask CMOS fab process: detailed description
 
-# Lab session
+# Lab session:
 
 To run dc simulations for an inverter, type
 ```
@@ -288,7 +288,7 @@ Add input excitation parameters and library model files to this and run a transi
 
 •	Delay table is output load cap vs input transition time.
 
-# Lab session
+# Lab session:
 
 To run STA, type
 
@@ -357,7 +357,7 @@ This gives the reports upto 4 digits of precision. Observe the data arrival time
 
 •	SPEF : standard parasitic exchange format
 
-# Labs:
+# Lab session:
 For routing and post-route STA, type
 
 ```
