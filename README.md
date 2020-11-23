@@ -1,5 +1,9 @@
 # VSD-PD-workshop
 
+<div class="bg-blue-light mb-2">
+  .text-gray-dark on .bg-blue-light
+</div>
+
 # Contents
 <a href="#day-1-understanding-of-riscv-based-picosoc"> 1. Understanding RISCV ISA, Qflow and QFN package </a>
 
@@ -42,7 +46,7 @@ git clone https://github.com/kunalg123/vsdflow.git
 
 type
 
-<div class="text-blue mb-2">
+
 cd
 
 cd vsdflow
@@ -57,7 +61,7 @@ cp ~/vsdflow/verilog/picorv32.v source/.
 
 qflow gui &
 
-</div>
+
 
 ![4](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/4.png)
 
