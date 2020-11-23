@@ -35,9 +35,9 @@
 ![2](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/2.png)
 # Lab: 
 In linux terminal, copied an existing rtl from vsdflow github folder in a local directory called my_picorv32, and prepared to run synthesis using osu018 technology.
-
+```
 git clone https://github.com/kunalg123/vsdflow.git
-
+```
 ![3](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/3.png)
 
 type
@@ -58,8 +58,6 @@ cp ~/vsdflow/verilog/picorv32.v source/.
 qflow gui &
 
 ```
-
-
 
 ![4](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/4.png)
 
@@ -140,17 +138,17 @@ After placement, can check the log file by clicking OK.
 ![11](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/11.png)
 
 To check the size of the chip layout, go to terminal again,
-
+```
 cd
 
 cd vsdflow/my_picorv32
 
 qflow display picorv32 &
-
+```
 This will open layout and tkcon window in the layout window, select whole chip. Now in tkcon window, type below command
-
+```
 box
-
+```
 The area will be displayed
 
 ![12](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/12.png)
@@ -176,7 +174,7 @@ The area will be displayed
 # Lab session
 
 To run dc simulations for an inverter, type
-
+```
 cd
 
 git clone https://github.com/kunalg123/ngspice_labs
@@ -184,33 +182,33 @@ git clone https://github.com/kunalg123/ngspice_labs
 cd ngspice_labs
 
 cat inv.spice
-
+```
 the spice netlist is displayed on terminal
 
 ![13](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/13.png)
 
 To run ngspice for this deck, type
-
+```
 ngspice inv.spice
-
+```
 A ngspice terminal opens, type
-
+```
 run
 
 setplot dc1
 
 plot out
-
+```
 This will generate the voltage transfer characteristic (VTC).
 
 For transient analysis, type
-
+```
 leafpad inv_tran.spice
-
+```
 ![14](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/14.png)
 
 This will open up the spice deck. Type
-
+```
 ngspice inv_tran.spice
 
 run
@@ -218,6 +216,7 @@ run
 setplot tran1
 
 plot out in
+```
 
 ![15](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/15.png)
 
@@ -228,27 +227,27 @@ the rise delay can be calculated by clicking on the points where the two input a
 ![17](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/17.png)
 
 To open the inv layout in magic, type
-
+```
 magic -T filename.tech
-
+```
 The layout opens. In the tkcon window type
-
+```
 source_draw_fn.tcl
-
+```
 the layout completes (some interconnects are added in the layout)
 
 ![20](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/20.png)
 
 Type
-
+```
 magic -T filename.tech fn_postlayout.mag &
-
-type
-
+```
+in thw tkcon window, type
+```
 extract all
 
 ext2spice
-
+```
 
 ![21](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/21.png)
 
@@ -267,7 +266,6 @@ Add input excitation parameters and library model files to this and run a transi
 • Setup and hold analysis with ideal clock 
 • CTS
 • Setup and hold analysis with real clock
-
 
 
 ## CTS: 
@@ -294,23 +292,24 @@ Add input excitation parameters and library model files to this and run a transi
 
 To run STA, type
 
+```
 cd
 
 cd vsdflow/my_picorv32
 
 leafpad picorv32.sdc
-
+```
 In the file picorv32.sdc file type
-
+```
 create_clock -name clk -period 2.5 -waveform {0 1.25} [get_ports clk]
-
+```
 Save and close. 
-
+```
 leafpad prelayout_sta.conf
-
+```
 Type below lines in prelayout_sta.conf file which you have just opened above
 
-
+```
 read_liberty /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
 
 read_verilog synthesis/picorv32.rtlnopwr.v
@@ -320,38 +319,34 @@ link_design picorv32
 read_sdc picorv32.sdc
 
 report_checks
-
+```
 This script reads the .lib, .sdc and .v file and links the top module to STA tool for analysis.
 
 ![24](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/24.png)
 
 Save and close. Type command
-
+```
 sta prelayout_sta.conf
-
+```
 observe the SLACK value
 
 ![25](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/25.png)
 
 see below 'sta' terminal like below
-
+```
 %
-
+```
 Type 
-
+```
 report_checks -digits 4
-
+```
 This gives the reports upto 4 digits of precision. Observe the data arrival time and data required time.
 
 
 ![26](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/26.png)
 
 
-
 ![27](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/27.png)
-
-
-
 
 
 # Day 5: Routing, DRC and the concept of SPEF
@@ -360,11 +355,12 @@ This gives the reports upto 4 digits of precision. Observe the data arrival time
 
 •	DRC: design rule check 
 
-•	•	SPEF : standard parasitic exchange format
+•	SPEF : standard parasitic exchange format
 
 # Labs:
 For routing and post-route STA, type
 
+```
 cd vsdflow/my_picorv32
 
 qflow route picorv32
@@ -374,7 +370,7 @@ qflow sta picorv32
 qflow backanno picorv32
 
 leafpad log/sta.log
-
+```
 Routing going on is shown below
 
 
