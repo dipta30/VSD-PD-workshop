@@ -3,7 +3,7 @@
 # Contents
 <a href="#day-1-understanding-riscv-isa-qflow-and-qfn-package"> 1. Understanding RISCV ISA, Qflow and QFN package </a>
 
-<a href="#day-2-introduction-to-floorplanning-and-libraries"> 2. Introduction to floorplanning and placement</a>
+<a href="#day-2-introduction-to-floorplanning-and-placement"> 2. Introduction to floorplanning and placement</a>
 
 <a href="#day-3-concepts-of-spice-simulations-layout-and-fabrication-steps"> 3. Concepts of spice simulations, layout and fabrication steps</a>
 
@@ -74,7 +74,7 @@ Then run preparation
 ![5](https://github.com/dipta30/VSD-PD-workshop/blob/main/images_all/5.png)
 
 
-# Day 2: Introduction to floorplanning and libraries
+# Day 2: Introduction to floorplanning and placement
 
 ## Floorplanning
 
